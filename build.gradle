@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply from: 'maven-publish.gradle'//上传时打开
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:2.3.3'
+}
